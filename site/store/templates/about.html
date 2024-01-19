@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% load cart %}
+{% load custom_filter %}
+
+
+
+<section class="bg-success py-5">
+    <div class="container">
+        <div class="row align-items-center py-5">
+            <div class="col-md-8 text-white">
+                <h1>About Us</h1>
+                <p>
+                    Welcome to FixerUpper, your premier destination for a wide range of local services. 
+                    We take pride in connecting skilled professionals with individuals in need of reliable and top-notch services. 
+                    At FixerUpper, we understand the importance of a trustworthy service marketplace, and we're dedicated to providing a seamless experience for both service providers and users.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <img src="{%static 'assets/img/about-hero.svg' %}" alt="About Hero">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Close Banner -->
+
+<!-- Start Section -->
+<section class="container py-5">
+    <div class="row text-center pt-5 pb-3">
+        <div class="col-lg-6 m-auto">
+            <h1 class="h1">Our Services</h1>
+            <p>
+                At FixerUpper, we strive to provide a comprehensive range of services to enhance your daily life. Our dedicated professionals are here to make your experience seamless and stress-free.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow">
+                <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
+                <h2 class="h5 mt-4 text-center">Delivery Services</h2>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow">
+                <div class="h1 text-success text-center"><i class="fas fa-exchange-alt"></i></div>
+                <h2 class="h5 mt-4 text-center">Shipping & Return</h2>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow">
+                <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
+                <h2 class="h5 mt-4 text-center">Promotion</h2>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 pb-5">
+            <div class="h-100 py-5 services-icon-wap shadow">
+                <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
+                <h2 class="h5 mt-4 text-center">24 Hours Service</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Section -->
+
+<!-- Start Brands -->
+<section class="bg-light py-5">
+    <div class="container my-4">
+        <div class="row text-center py-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Our Brands</h1>
+                <p>
+                  Reputable Brands That Work With Us
+                </p>
+            </div>
+            <div class="col-lg-9 m-auto tempaltemo-carousel">
+                <div class="row d-flex flex-row">
+                    <!--Controls-->
+                    <div class="col-1 align-self-center">
+                        <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="prev">
+                            <i class="text-light fas fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <!--End Controls-->
+
+                    <!--Carousel Wrapper-->
+                    <div class="col">
+                        <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="templatemo-slide-brand" data-bs-ride="carousel">
+                            <!--Slides-->
+                            <div class="carousel-inner product-links-wap" role="listbox">
+
+                                <!-- {% for provider_image in providers_with_logo %} -->
+                                <!--First slide-->
+                                <!-- <div class="carousel-item active  {% if forloop.first %} active{% endif %} "> -->
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <!-- Logo 1 -->
+                                            <div class="col-3 p-md-5">
+                                                <a href="#">
+                                                    <img class="img-fluid brand-img" src="https://scontent.fmla3-1.fna.fbcdn.net/v/t39.30808-6/395465002_736088451872024_240264781318396922_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=weFq6nnGUfMAX-HRfjF&_nc_ht=scontent.fmla3-1.fna&oh=00_AfDzkQQ5JewXHrf_AZW5mYKfL1d-9ozPMaup07sKwv0ijg&oe=65AF8842" alt="Brand Logo 1">
+                                                </a>
+                                            </div>
+                                            
+                                            <!-- Logo 2 -->
+                                            <div class="col-3 p-md-5">
+                                                <a href="#">
+                                                    <img class="img-fluid brand-img" src="https://scontent.fmla3-1.fna.fbcdn.net/v/t39.30808-6/312653310_498013859035917_4010291775358770670_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=SL8U3TNhh-wAX_3l82j&_nc_ht=scontent.fmla3-1.fna&oh=00_AfDR8wFym02jwIDVhPOONReapC1O2ZypiKxg8SIsyhM2Og&oe=65AF57A3" alt="Brand Logo 2">
+                                                </a>
+                                            </div>
+                                    
+                                            <!-- Logo 3 -->
+                                            <div class="col-3 p-md-5">
+                                                <a href="#">
+                                                    <img class="img-fluid brand-img" src="https://scontent.fmla3-1.fna.fbcdn.net/v/t39.30808-6/310057465_527003499426424_3463402054120570854_n.png?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=PM3tQpq5XkgAX9xSVJT&_nc_ht=scontent.fmla3-1.fna&oh=00_AfCdrBU971ogsQn4k_fiWW1fnMy-4d07up8Xg_ooLDzQXQ&oe=65B0644B" alt="Brand Logo 3">
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3 p-md-5">
+                                                <a href="#">
+                                                    <img class="img-fluid brand-img" src="https://scontent.fmla3-1.fna.fbcdn.net/v/t39.30808-6/322009299_1300314760532625_2643773318417949520_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=HPtm-KtzHT4AX_MY25S&_nc_ht=scontent.fmla3-1.fna&oh=00_AfC7wuGK_LNHP37GrA_KFB0FDo7i6bq-RYOA-Dc9OZTOgA&oe=65B04F1D" alt="Brand Logo 3">
+                                                </a>
+                                            </div>
+                                    
+                                            <!-- Add more col-3 divs for additional logos -->
+                                        </div>
+                                    </div>
+                                    
+                                <!-- {% endfor %} -->
+                                <!--End First slide-->
+
+
+                            </div>
+                            <!--End Slides-->
+                        </div>
+                    </div>
+                    <!--End Carousel Wrapper-->
+
+                    <!--Controls-->
+                    <div class="col-1 align-self-center">
+                        <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="next">
+                            <i class="text-light fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                    <!--End Controls-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Brands-->
+
+
+{% endblock %}
